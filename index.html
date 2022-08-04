@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey form</title>
+    <link rel = "stylesheet" href = "CSS/style.css">
+</head>
+<body>
+    <div class="Container">
+        <h1>freeCodeCamp Survey Form</h1>
+        <h3>Thank you for taking the time to help us improve the platform</h3>
+    </div>
+    <form class="form">
+    <div>
+        <label  for="fname">Name</label><br>
+        
+        <input class="text" placeholder="Enter Your Name " type="text" id="fname"><br>
+        
+        <label for="email">Email</label><br>
+        <input class="text" placeholder="Enter Your Email" type="email" id="email"><br>
+        <label for="age">Age(optional)</label><br>
+        <input class="text" placeholder="Enter Your Age" type="number" id="age"><br>
+        <label for="current job">Which Option best describe your current job </label><br>
+        <select class="text" id="current job">
+            <option disabled selected value>choose your role</option>
+            <option value="student">student</option>
+            <option value="full time job">full time job</option>
+            <option value="full time learner">full time learner</option>
+            <option value="not to say">not to say</option>
+          </select><br>
+    </div> 
+    <div>   
+        <p>Would you recommend freeCodeCamp to a friend?</p><br>
+        <input type="radio" id="Definitely">
+        <label for="Definitely">Definitely</label><br>
+
+        <input type="radio" id="may be">
+        <label for="may be">May be</label><br>
+
+        <input type="radio" id="not sure">
+        <label for="not sure">Not Sure</label><br>
+    </div>
+    <div class = "margin">  
+        <label class="msg" for = "feature">What is your favorite feature of freeCodeCamp?</label><br>
+        <select class="text" name="" id="feature">
+            <option disabled selected value>Select an Option</option>
+            <option value="">Challenges</option>
+            <option value="">project</option>
+            <option value="">open source</option>
+            <option value="">community</option>
+        </select><br>
+    </div> 
+    <div>
+        <p>What would you like to see improved? (Check all that apply)</p><br>
+        <input type="checkbox" id="Front-end">
+        <label for="Front-end">Front-end</label><br>
+        <input type="checkbox" id="Backt-end">
+        <label for="Back-end">Back-end</label><br>
+        <input type="checkbox" id="Challenges">
+        <label for="Challenges">Challenges</label><br> 
+        <input type="checkbox" id="Open Source Community">
+        <label for="Open Source Community">Open Source Community</label><br>
+        <input type="checkbox" id="Gitter help rooms">
+        <label for="Gitter help rooms">Gitter help rooms</label><br>
+        <input type="checkbox" id="Additional Courses">
+        <label for="Additional Courses">Additional Courses</label><br>
+    </div>
+    <div class="margin">
+        <label class=msg for="msg">Any comments or suggestions?</label><br>
+        <textarea name="message" id="msg" placeholder="Enter Your message here..."></textarea><br>
+
+        <button type="submit"><bold>submit</bold></button>
+    </div>
+          
+
+        
+    </form>
+</body>
+</html>
